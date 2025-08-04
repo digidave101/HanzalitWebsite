@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tuesday - Hanzalit</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #001f3f;
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin: 30px auto 20px;
+    }
+    .carousel-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px auto;
+    }
+    .subtext {
+      font-size: 1.2rem;
+      margin: 15px auto;
+      opacity: 0.9;
+    }
+    .entry-button {
+      background-color: red;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      margin: 20px auto 50px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Enter below. You wouldn’t be here if you didn’t already know the code.</h1>
+  <div class="carousel-wrapper">
+    <!-- Carousel will be injected here -->
+    <div class="carousel-container">
+  <button class="nav-btn left" onclick="scrollManual(-1)">&#10094;</button>
+  <div class="carousel-track" id="carouselTrack">
+    <img onload="fixOrientation(this)" src="https://raw.githubusercontent.com/digidave101/hanzalit-Website/main/images/Screenshot%202025-08-04%20015202.png" alt="Image">
+<img onload="fixOrientation(this)" src="https://raw.githubusercontent.com/digidave101/hanzalit-Website/main/images/Screenshot%202025-08-04%20015256.png" alt="Image">
+<img onload="fixOrientation(this)" src="https://raw.githubusercontent.com/digidave101/hanzalit-Website/main/images/Screenshot%202025-08-04%20015049.png" alt="Image">
+<img onload="fixOrientation(this)" src="https://raw.githubusercontent.com/digidave101/hanzalit-Website/main/images/Screenshot%202025-08-04%20015153.png" alt="Image">
+<img onload="fixOrientation(this)" src="https://raw.githubusercontent.com/digidave101/hanzalit-Website/main/images/Screenshot%202025-08-04%20015353.png" alt="Image">
+<img onload="fixOrientation(this)" src="https://raw.githubusercontent.com/digidave101/hanzalit-Website/main/images/Screenshot%202025-08-04%20015012.png" alt="Image">
+<img onload="fixOrientation(this)" src="https://raw.githubusercontent.com/digidave101/hanzalit-Website/main/images/Screenshot%202025-08-04%20015312.png" alt="Image">
+<img onload="fixOrientation(this)" src="https://raw.githubusercontent.com/digidave101/hanzalit-Website/main/images/Screenshot%202025-08-04%20015229.png" alt="Image">
+<img onload="fixOrientation(this)" src="https://raw.githubusercontent.com/digidave101/hanzalit-Website/main/images/Screenshot%202025-08-04%20015216.png" alt="Image">
+<img onload="fixOrientation(this)" src="https://raw.githubusercontent.com/digidave101/hanzalit-Website/main/images/Screenshot%202025-08-04%20015223.png" alt="Image">
+<img onload="fixOrientation(this)" src="https://raw.githubusercontent.com/digidave101/hanzalit-Website/main/images/Screenshot%202025-08-04%20015103.png" alt="Image">
+<img onload="fixOrientation(this)" src="https://raw.githubusercontent.com/digidave101/hanzalit-Website/main/images/Screenshot%202025-08-04%20015239.png" alt="Image">
+<img onload="fixOrientation(this)" src="https://raw.githubusercontent.com/digidave101/hanzalit-Website/main/images/Screenshot%202025-08-04%20015328.png" alt="Image">
+<img onload="fixOrientation(this)" src="https://raw.githubusercontent.com/digidave101/hanzalit-Website/main/images/Screenshot%202025-08-04%20015306.png" alt="Image">
+<img onload="fixOrientation(this)" src="https://raw.githubusercontent.com/digidave101/hanzalit-Website/main/images/Screenshot%202025-08-04%20014959.png" alt="Image">
+<img onload="fixOrientation(this)" src="https://raw.githubusercontent.com/digidave101/hanzalit-Website/main/images/Screenshot%202025-08-04%20015133.png" alt="Image">
+<img onload="fixOrientation(this)" src="https://raw.githubusercontent.com/digidave101/hanzalit-Website/main/images/Screenshot%202025-08-04%20015208.png" alt="Image">
+<img onload="fixOrientation(this)" src="https://raw.githubusercontent.com/digidave101/hanzalit-Website/main/images/Screenshot%202025-08-04%20014940.png" alt="Image">
+<img onload="fixOrientation(this)" src="https://raw.githubusercontent.com/digidave101/hanzalit-Website/main/images/Screenshot%202025-08-04%20015032.png" alt="Image">
+<img onload="fixOrientation(this)" src="https://raw.githubusercontent.com/digidave101/hanzalit-Website/main/images/Screenshot%202025-08-04%20015344.png" alt="Image">
+<img onload="fixOrientation(this)" src="https://raw.githubusercontent.com/digidave101/hanzalit-Website/main/images/Screenshot%202025-08-04%20015318.png" alt="Image">
+<img onload="fixOrientation(this)" src="https://raw.githubusercontent.com/digidave101/hanzalit-Website/main/images/Screenshot%202025-08-04%20015424.png" alt="Image">
+<img onload="fixOrientation(this)" src="https://raw.githubusercontent.com/digidave101/hanzalit-Website/main/images/Screenshot%202025-08-04%20015247.png" alt="Image">
+<img onload="fixOrientation(this)" src="https://raw.githubusercontent.com/digidave101/hanzalit-Website/main/images/Screenshot%202025-08-04%20015403.png" alt="Image">
+<img onload="fixOrientation(this)" src="https://raw.githubusercontent.com/digidave101/hanzalit-Website/main/images/Screenshot%202025-08-04%20015122.png" alt="Image">
+  </div>
+  <button class="nav-btn right" onclick="scrollManual(1)">&#10095;</button>
+</div>
+<script>
+  const track = document.getElementById("carouselTrack");
+  const images = track.getElementsByTagName("img");
+  let index = 0;
+
+  function showImage(i) {
+    const width = track.clientWidth;
+    track.style.transform = `translateX(${-width * i}px)`;
+  }
+
+  function scrollManual(direction) {
+    index += direction;
+    if (index < 0) index = images.length - 1;
+    if (index >= images.length) index = 0;
+    showImage(index);
+    resetAutoScroll();
+  }
+
+  function autoScroll() {
+    index = (index + 1) % images.length;
+    showImage(index);
+  }
+
+  let interval = setInterval(autoScroll, 3000);
+
+  function resetAutoScroll() {
+    clearInterval(interval);
+    interval = setInterval(autoScroll, 3000);
+  }
+
+  window.addEventListener("resize", () => showImage(index));
+  window.onload = () => showImage(index);
+
+  function fixOrientation(img) {
+    if (img.naturalHeight > img.naturalWidth) {
+      img.classList.add('portrait');
+    }
+  }
+</script>
+  </div>
+  <p class="subtext">CLICK ON BUTTON TO ENTER HAPPY HOUR</p>
+  <a class="entry-button" href="https://us02web.zoom.us/j/85428274507" target="_blank">ONLY FOR THE BOLD</a>
+
+  <footer style="margin-top: 40px; color: #aaa; font-size: 0.7rem;">
+    <p>Copyright © 2025 Hanzal It Pub - All Rights Reserved</p>
+    <p>Contact: <a href="mailto:hanzaltv@gmail.com" style="color: #aaa; text-decoration: none;">hanzaltv@gmail.com</a></p>
+  </footer>
+</body>
+</html>
+
